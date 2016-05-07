@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_weight="0.5"
+        android:layout_gravity="start"
+        android:padding="2dp"  />
+
+    <TextView
+        android:id="@+id/rowId"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:visibility="invisible" />
+
+    <mooreapps.whopays20.CurrencyEditText
+        android:id="@+id/payAmount"
+        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_weight="0.5"
+        android:gravity="end"
+        android:padding="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="numberDecimal"
+        android:imeOptions="flagNoFullscreen|actionDone" />
+
+
+
+
+</LinearLayout>
+

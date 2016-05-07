@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:padding="12dp"
+        card_view:cardElevation="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:id="@+id/dataLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                style="@style/ListText"
+                android:id="@+id/transDate"
+                android:gravity="start"
+                android:layout_weight="0.5">
+            </TextView>
+
+            <TextView
+                style="@style/ListText"
+                android:gravity="end"
+                android:layout_weight="0.5"
+                android:id="@+id/transAmount">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                style="@style/ListText"
+                android:id="@+id/transGroup"
+                android:gravity="start"
+                android:layout_weight="0.5">
+            </TextView>
+
+            <TextView
+                style="@style/ListText"
+                android:gravity="end"
+                android:layout_weight="0.5"
+                android:id="@+id/transStatus">
+            </TextView>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <TextView
+                    style="@style/ListText"
+                    android:id="@+id/transLocation"
+                    android:gravity="start"
+                    android:layout_weight="0.5">
+                </TextView>
+
+                <TextView
+                    style="@style/ListText"
+                    android:gravity="end"
+                    android:layout_weight="0.5"
+                    android:id="@+id/transPaid">
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/ListText"
+            android:id="@+id/rowId"
+            android:visibility="invisible" />
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

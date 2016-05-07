@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/buttonDeletePerson"
+        android:src="@drawable/ic_remove_circle_outline_black_24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/nameFirst"
+        style="@style/ListText2"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/buttonDeletePerson"
+        android:textIsSelectable="false"
+        android:layout_centerVertical="true" />
+
+
+    <TextView
+        android:id="@+id/nameLast"
+        style="@style/ListText2"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/nameFirst"
+        android:textIsSelectable="false"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/rowId"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/nameLast"
+        android:visibility="invisible"
+        android:textIsSelectable="false"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

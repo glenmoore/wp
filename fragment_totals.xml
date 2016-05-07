@@ -1,0 +1,55 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        tools:context="mooreapps.whopays20.BillPaymentsActivity">
+
+
+        <LinearLayout
+            android:id="@+id/dataLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:background="@color/ColorPrimaryLight"
+            android:focusableInTouchMode="true"
+
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <TextView
+                android:id="@+id/txtGroup"
+                style="@style/ListText"
+                android:gravity="start"
+                android:padding="10dp"
+                android:layout_weight="0.4"
+                android:text="@string/group" />
+
+            <Spinner
+                android:id="@+id/transGroup"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="end"
+                android:layout_weight="0.6"
+                android:inputType="text"
+                android:imeOptions="actionDone"/>
+
+        </LinearLayout>
+
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dataLayout"
+        android:background="@drawable/border_ui"
+        style="@style/ListViewStyle.Light"
+        android:id="@android:id/list" />
+
+
+    </RelativeLayout>
+
+
+
+
